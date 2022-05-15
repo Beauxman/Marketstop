@@ -1,3 +1,4 @@
 NOTE: Node Modules are missing due to being to numerous for Github to allow. Install those separately.
-Packages include:
+Packages to install:
+-Core Node JS modules
 -MongoDB
