@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Marketstop - Signup</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="signup.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 title">
+					<span>Marketstop</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-7">
+					<h2>Signup Page</h2>
+				</div>
+				<div class="col-sm-3">
+					<label>Already have an account?</label>
+					<a type="button" class="btn btn-default" href="login.html">Login</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-4">
+					<div class="jumbotron box-transparent box-rounded" style="height: 70vh; background: rgba(120, 120, 120, 0.25);">
+						<h2>Welcome to Marketstop!</h2>
+						<br>
+						<h4>This application serves as an online marketplace which prioritizes simple and easy access to its classified advertisements and sales listings. Users are able to post advertisements for items or services they seek to sell, or search through a wide variety of sales listings for something of intrigue.</h4>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="jumbotron box-transparent box-rounded" style="height: 70vh;">
+						<h2 style="padding-bottom: 20px;">Register</h2>
+						<div class="wrapper">
+							<div class="email">
+								<input class="input" id="email" type="text" placeholder="Enter your E-mail adress.">
+								<div id="emailError" class="error"></div>
+							</div>
+							<br>
+							<div class="name">
+								<input class="input" id="name"  type="text" placeholder="Enter your name.">
+								<div id="nameError" class="error"></div>
+							</div>
+							<br>
+							<div class="password">
+								<input class="input" id="password" type="password" placeholder="Enter the password.">
+								<div id="passwordError" class="error"></div>
+							</div>
+							<br>
+							<div class="passwordCheck">
+								<input class="input" id="passwordCheck" type="password" placeholder="Re-Enter the password.">
+								<div id="passwordCheckError" class="error"></div>
+							</div>
+							<br>
+							<div class="phone">
+								<input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
+								<input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
+								<input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+
+							</div>
+							<br>
+							<div class="auth">
+								<div id="certificationNumber">000000</div>
+								<button class="input btn btn-default" disabled id="sendMessage" onclick="getToken()">sendVerification</button>
+							</div>
+							<br>
+							<div class="timer">
+								<div id="timeLimit">03:00</div>
+								<button class="input btn btn-default" disabled id="completion" onclick="checkCompletion()">VerificationCheck</button>
+							</div>
+							<br>
+							<div class="area">
+								<select class="input" id="area">
+									<option selected disabled>Choose your location</option>
+									<option>Los Angeles</option>
+									<option>Orange County</option>
+								</select>
+								<div id="areaError" class="error"></div>
+							</div>
+							<br>
+							<div class="signUp">
+								<button class="input btn btn-default" id="signUpButton" disabled onclick="signUpCheck()">Create Account</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

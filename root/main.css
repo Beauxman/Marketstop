@@ -1,0 +1,82 @@
+body {
+    font-family: Sora, Verdana, Tahoma, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	box-shadow: 1px 1px 3px 3px #a6a6a6;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
+.input {
+	width: 80%;
+	font-size: 18px;
+}
+
+.hovertext
+{
+ position:  relative;
+ border-bottom: 1px dotted black;
+}
+
+.hovertext:before 
+{
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 2;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.box-transparent {
+    background: rgba(120, 120, 120, 0.15);
+}
+
+.box-rounded {
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.title {
+    padding: 10px;
+    font-size: 72px;
+    padding-left: 2%;
+}
+
+.btn-primary {
+    background: rgba(255, 255, 255, 0.0);
+    border-width: 0px;
+    color: #ffeab6;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
