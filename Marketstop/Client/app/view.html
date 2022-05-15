@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Marketstop - View</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="signup.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet"> 
+	</head>
+	<body onload="view()">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-9 title">
+					<span>Marketstop</span>
+				</div>
+				<div class="col-sm-2" style="font-size: 64px;">
+				</div>
+				<div class="col-sm-1">
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+						<div class="navbar-header">
+						    <a class="navbar-brand" href="#"></a>
+						</div>
+						<ul class="nav navbar-nav">
+						    <li class="active"><a href="browse.html">Browse</a></li>
+						    <li><a href="post.html">Post</a></li>
+							<li><a href="login.html">Logout</a></li>
+						</ul>
+				  </div>
+			</nav>
+			<div class="row">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-7">
+					<h2>View</h2>
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-9">
+					<div class="jumbotron box-transparent box-rounded" style="text-align: left; font-size: 24px;">
+						<div class="row">
+							<div class="col-sm-9">
+								<h1 id="title" style="font-size: 48px;">Invalid post</h1>
+								<h2 id="price">Invalid post</h2>
+							</div>
+							<div class="col-sm-3">
+								<button class="input btn btn-default" style="width: 100%;">Contact Seller</button>
+							</div>
+						</div>
+						<br>
+						<img id="image" src="test.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto;"> 
+						<br>
+						<h3>Location: <span id="location">Invalid post</span></h3>
+						<h3>Description: </h3>
+						<div class="file-space box-rounded" style="text-align: left;">
+							<p id="description">Invalid post</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="control/view.js"></script>
+</html>

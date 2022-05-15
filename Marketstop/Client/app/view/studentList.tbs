@@ -1,0 +1,7 @@
+
+{{#each students}}
+	<br>
+	<a href=''>{{this._id}}</a>
+	<label>{{this.firstName}}</label>
+	<label>{{this.lastName}}</label>
+{{/each}}
