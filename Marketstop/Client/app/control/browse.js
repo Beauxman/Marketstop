@@ -21,7 +21,8 @@ function browse() {
 				
 				div.innerText = "";
 				div.className = "col-sm-3"
-				div.style = "height: 250px;"
+				div.style = "height: 250px; margin-bottom: 50px;"
+				img.style = "height: 80%; width: 100%;"
 				main.appendChild(div)
 				
 				img.src = this.response[i].image
